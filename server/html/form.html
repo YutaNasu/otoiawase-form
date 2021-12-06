@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="./../css/form.css">
+    </head>
+    <title>FORM</title>
+    <body>
+        <form method="POST" action="../check.php">
+            <div class = "toi">
+                <label class = "label">お名前 <span>※必須</span></label><br><br>
+                <input class = "input" type = "text" name = "name" placeholder="例）山田太郎" required>
+                <br><br><br>
+                <label class = "label">ふりがな <span>※必須</span></label><br><br>
+                <input class = "input" type = "text" name = "furigana" placeholder="例）やまだたろう" required>
+                <br><br><br>
+                <label class = "label">E-mail <span>※必須</span></label><br><br>
+                <input class = "input" type = "email" name = "email" placeholder="例）sample@example.com" required>
+                <br><br><br>
+                <label class = "label">電話番号 <span>※必須</span></label><br><br>
+                <input class = "input" type="tel" name="tel" maxlength="20" placeholder="例）0000000000" required>
+                <br><br><br>
+                <label class = "label">お問い合わせ項目</label><br><br>
+                <select name="item">
+                <option value="">お問い合わせ項目を選択してください</option>
+                <option value="ご予約">ご予約</option>
+                <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                <option value="ご意見・ご感想">ご意見・ご感想</option>
+                </select>
+                <br><br><br>
+                <label class = "label">お問い合わせ内容</label><br><br>
+                <textarea class = "text1" rows="5" name = "qa" placeholder="お問合せ内容を入力"></textarea>
+                <br><br><br>
+            </div>
+            <div class="btn-area">
+                <input type="submit" value="送信">
+                <input type="reset" value="クリア">
+              </div>
+        </form>
+    </body>
+</html>
